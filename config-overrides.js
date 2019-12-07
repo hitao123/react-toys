@@ -6,12 +6,12 @@ const devServerConfig = () => config => {
     port: 3000,
     proxy: {
       "/api": {
-        target: "https://cnodejs.org/api/v1",
+        target: "https://cnodejs.org",
         changeOrigin: true,
         // ws: false,
-        // pathRewrite: {
-        //   "^/app/v1": "/app/v1"
-        // },
+        pathRewrite: {
+          "^/api": "/api/v1"
+        },
         secure: false
       }
     }

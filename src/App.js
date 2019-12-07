@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Blog from './containers/Blog';
+import Blog from './containers/home/Blog';
 import Player from './containers/Player';
 
 // const useFetch = (url) => {

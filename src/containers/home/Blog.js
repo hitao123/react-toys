@@ -1,7 +1,7 @@
 import React from 'react';
 import {useRouteMatch } from 'react-router-dom';
 
-import NotFount from '../components/NotFount';
+import NotFount from '../../components/NotFount';
 import Articles from './Articles';
 
 const Blog = () => {
