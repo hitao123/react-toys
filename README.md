@@ -23,3 +23,7 @@ let history = useHistory();
 > [swr](https://github.com/zeit/swr), 冒事是宇宙最强前端出品，目前是单个使用在函数组件里面，使用起来很简单，没有和 redux 结合，目前还存在不少问题，可以等后续稳定一点在使用
 
 ## 使用 umijs/hooks 常用业务组件对项目进行改造
+
+## react context 高级 api 使用
+
+> 16.3.0之前官方建议不要使用，很多库已经采用了 context API (如 react-router, react-redux)。在16.3.0之后的版本，React正式提供了稳定的 context API， 在 antd 库里面见到 Provider-Consumer 这种模式，之前不大清楚是干嘛用的，看了一下 react 官网几个例子实践一下，主要就是用来解决多个层级 props 传递的问题，一般如 本地化或者 主题换肤这样的场景是不可能一层层传递属性，所以可以通过 context API 来处理
