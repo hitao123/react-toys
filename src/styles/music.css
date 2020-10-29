@@ -28,11 +28,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-.visualizer {
 
-}
 .playlist {
-    flex: 240px 1 1;
+    width: 334px;
     height: 100vh;
     margin-left: 10px;
     overflow: auto;
@@ -63,7 +61,7 @@ body {
 }
 .player-box {
     position: relative;
-    flex: 430px 3 3;
+    width: 680px;
     height: 280px;
     margin: 0 20px;
     text-align: left;
@@ -101,7 +99,7 @@ body {
     vertical-align: middle;
     width: 80px;
     height: 2px;
-    background-color: rgb(229, 229, 232);
+    background-color: #000;
     cursor: pointer;
 }
 .volume:hover .volume-slider {
@@ -111,19 +109,19 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    width: 2%;
-    height: 2px;
+    width: 1%;
+    height: 4px;
     background-color: #6bbd7a;
 }
-.progress {
+.player-box .player-progress {
     padding: 5px 0;
     cursor: pointer;
 }
-.progress-slider {
+.player-box .progress-slider {
     height: 1px;
-    background-color: #dadada;
+    background-color: #999;
 }
-.progress-slider .progress-slider-value {
+.player-box .progress-slider .progress-slider-value {
     width: 1%;
     height: 100%;
     background-color: #6bbd7a;
@@ -153,6 +151,7 @@ body {
     position: relative;
     margin-right: 50px;
     display: block;
+    width: 240px;
     height: 240px;
     overflow: hidden;
     border-radius: 50%;
