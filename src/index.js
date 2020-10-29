@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import initialStore from './store';
+import './styles/font-awesome.min.css';
 
 const store = initialStore();
 
