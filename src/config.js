@@ -1,4 +1,4 @@
-export const playlist = [
+export const PlayListConfig = [
     {
         status: 0,
         picture: "https://img3.doubanio.com/lpic/s3346933.jpg",

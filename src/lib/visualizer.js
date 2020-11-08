@@ -6,14 +6,15 @@ export class Visualizer {
 
     constructor(selector, audio) {
 		this.canvas = document.getElementById(selector);
-		this.ctx = this.canvas.getContext('2d');
-		// CROS 不发送cookie
+        this.ctx = this.canvas.getContext('2d');
+        
+		// CORS 不发送cookie
 		audio.crossOrigin = 'anonymous';
-		//兼容性写法
-		this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        //兼容性写法
+        this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 		//用来获取音频时间和频率数据
 		this.analyser = this.audioCtx.createAnalyser();
-		//将前面的audio进行处理
+        //将前面的audio进行处理
 		this.audioSrc = this.audioCtx.createMediaElementSource(audio);
 		//输出到系统扬声器
 		this.audioSrc.connect(this.analyser);
