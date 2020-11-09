@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 import {ButtonGroup, Button, ProgressBar} from 'react-bootstrap';
 import screenfull from 'screenfull';
 
-import Duration from '../components/Duration';
+import Duration from '../../components/Duration';
 
 
 const Player = () => {
@@ -146,7 +146,6 @@ const Player = () => {
           <span>/</span>
           <Duration seconds={duration} />
         </div>
-        
       </div>
     );
 }

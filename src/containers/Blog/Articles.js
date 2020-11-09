@@ -13,11 +13,13 @@ function Dashboard () {
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>
 
+    console.log(data);
+
     return (
         <div>
             <div>
                 {
-                    data.data.map((item, index) => {
+                    data && data.data && data.data.map((item, index) => {
                     return (
                         <h4 key={index}>
                             {index + '. '}

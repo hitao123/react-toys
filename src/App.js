@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Blog from './containers/home/Blog';
-import Player from './containers/Player';
-import Music from './containers/music';
+import Blog from './containers/Blog';
+import VideoPlayer from './containers/Player/VideoPlayer';
+import MusicPlayer from './containers/Player/MusicPlayer';
+import Home from './containers/Home';
 import Context from './containers/context';
-
 
 
 const App = () => {
@@ -13,8 +13,9 @@ const App = () => {
     <Router>
       <div>
         <Switch>
-          <Route path="/" exact component={Player} />
-          <Route path="/music" exact component={Music} />
+          <Route path="/" exact component={Home} />
+          <Route path="/video-player" exact component={VideoPlayer} />
+          <Route path="/music-player" exact component={MusicPlayer} />
           <Route path="/blog/:id">
             <Blog />
           </Route>

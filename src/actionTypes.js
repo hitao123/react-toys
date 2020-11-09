@@ -1,7 +1,7 @@
 import keymirror from 'keymirror';
-import topic from './containers/home/ActionTypes';
+import topic from './containers/Blog/ActionTypes';
 
-export const combinActionTypes = actionTypeList => {
+export const combineActionTypes = actionTypeList => {
     const actionTypeMap = {};
     for (const item of actionTypeList) {
         const keys = Object.keys(item);
@@ -19,4 +19,4 @@ const actionTypeList = [
     topic
 ];
 
-export default keymirror(combinActionTypes(actionTypeList));
+export default keymirror(combineActionTypes(actionTypeList));
